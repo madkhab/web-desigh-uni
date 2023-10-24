@@ -219,16 +219,15 @@ a {
     width: 100%;
 }
 
-.discount-tag{
+.discount-tag {
     position: absolute;
-    background-color: #ffffff;
-    border: 2px solid #000000;
-    padding: 15px;
-    border-radius: 15px;
-    color: #000000;
+    background-color: #000000;
+    padding: 12px;
+    border-radius: 12px;
+    color: #ffffff;
     right: 10px;
     top: 10px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .basket-button{
