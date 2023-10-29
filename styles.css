@@ -272,7 +272,7 @@ a {
 }
 
 .price {
-    font.size: 35px;
+    font-size: 35px;
     margin-left: 20px;
     opacity: 0.5;
     text-decoration: line-through;
