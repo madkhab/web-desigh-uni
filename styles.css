@@ -238,17 +238,12 @@ a {
 }
 
 .product-container {
-    padding: 0 5vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 550px;
     scroll-behavior: smooth;
     margin-bottom: 20px;
     width: auto;
-}
-
-.product-container:nth-child(n + 1) {
-    margin-top: 50px;
 }
 
 .product-card {
@@ -330,4 +325,12 @@ a {
     margin-left: 20px;
     opacity: 0.5;
     text-decoration: line-through;
+}
+
+.products-catalog {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    column-gap: 20px;
+    row-gap: 10px;
 }
