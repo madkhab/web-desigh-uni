@@ -15,8 +15,11 @@
         <nav class="navigation-bar">
             <a href="#home" class="logo">Madi & Honza's Shop</a>
             <div class="search">
-                <input  type="text" class="search-box" placeholder="Search type of t-shirt, brand, name">
-                <button class="search-bttn"> search</button>
+                <input id="search-field" type="text" class="search-box"
+                       placeholder="Search type of t-shirt, brand, name">
+                <button class="search-button" type="submit">
+                    <label for="search-field" class="search-button-label">Search</label>
+                </button>
             </div>
             <div class="navigation-menu-burger">
                 <img class="open-menu-image" src="./assets/menu-bar.png" alt="menu">
@@ -36,10 +39,14 @@
     <div id="home">
         <div class="menu-container">
             <div class="category-select" id="mens-clothes">
-                <a href="./catalog/men-catalog.html">Men clothes</a>
+                <div class="category-label-wrapper">
+                    <a href="./catalog/men-catalog.html">Men clothes</a>
+                </div>
             </div>
             <div class="category-select" id="womens-clothes">
-                <a href="#">Women clothes</a>
+                <div class="category-label-wrapper">
+                    <a href="#">Women clothes</a>
+                </div>
             </div>
         </div>
     </div>

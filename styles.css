@@ -12,7 +12,6 @@ body {
 }
 
 main {
-    height: 80vh;
     z-index: 1;
 }
 
@@ -38,7 +37,7 @@ a {
 
 .navigation-wrapper {
     position: relative;
-    height: 10vh;
+    /*height: 10vh;*/
     width: 100%;
     background: #000000;
     padding: 30px;
@@ -46,8 +45,10 @@ a {
 
 .navigation-bar {
     display: flex;
+    height: 100%;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .close-menu-image, .open-menu-image {
@@ -56,14 +57,14 @@ a {
 }
 
 .search {
-    display: flex;
-    align-items: center;
-    width: 300px;
+    display: inline-flex;
+    width: 40%;
+    height: 90%;
 }
 
 .search-box {
     width: 90%;
-    height: 50px;
+    height: 90%;
     padding: 10px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -72,23 +73,28 @@ a {
     color: #ffffff;
     outline: none;
     font-size: 20px;
+    font-family: 'Kanit', sans-serif;
 }
 
-.search-box::placeholder{
+.search-box:hover::placeholder {
+    opacity: 0.3;
+    font-size: 15px;
+}
+
+.search-box::placeholder {
     color: #ffffff;
     opacity: 0.5;
+    transition: .3s ease-out;
 }
 
-.search-bttn {
+.search-button {
     width: 30%;
-    height: 50px;
+    height: inherit;
     padding: 10px 20px;
-    border: none;
-    outline: none;
-    cursor: pointer;
     background: #ffffff;
     color: #000000;
     font-size: 20px;
+    font-family: 'Kanit', sans-serif;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -174,6 +180,17 @@ a {
     font-size: 70px;
 }
 
+.category-select:hover .category-label-wrapper {
+    opacity: 1;
+}
+
+.category-label-wrapper {
+    background: black;
+    padding: 20px;
+    border-radius: 30px;
+    opacity: 0.7;
+}
+
 #mens-clothes {
     background-image: url("https://plus.unsplash.com/premium_photo-1683140431958-31505d0fd1ff?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVuJTIwaW4lMjBzaGlydHxlbnwwfHwwfHx8MA%3D%3D");
 }
@@ -208,7 +225,7 @@ a {
 
 .men-product {
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
     padding: 30px 0;
 }
 
@@ -223,7 +240,7 @@ a {
 .product-container {
     padding: 0 5vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     height: 550px;
     scroll-behavior: smooth;
     margin-bottom: 20px;

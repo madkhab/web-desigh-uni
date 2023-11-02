@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>hello world</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +15,11 @@
         <nav class="navigation-bar">
             <a href="../index.html" class="logo">Madi & Honza's Shop</a>
             <div class="search">
-                <input  type="text" class="search-box" placeholder="Search type of t-shirt, brand, name">
-                <button class="search-bttn"> search</button>
+                <input id="search-field" type="text" class="search-box"
+                       placeholder="Search type of t-shirt, brand, name">
+                <button class="search-button" type="submit">
+                    <label for="search-field" class="search-button-label">Search</label>
+                </button>
             </div>
             <div class="navigation-menu-burger">
                 <img class="open-menu-image" src="../assets/menu-bar.png" alt="menu">
@@ -33,7 +35,7 @@
         </nav>
     </div>
 </header>
-<section class="men-product">
+<main class="men-product">
     <h2 class="product-category">Best selling</h2>
     <!-- First row -->
     <div class="product-container">
@@ -100,6 +102,41 @@
         </div>
         <div class="border"></div>
     </div>
-</section>
+<!--    Third row-->
+    <div class="product-container">
+        <!-- První produkt -->
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">50% OFF
+                </span>
+                <img src="https://img.freepik.com/premium-photo/man-striped-shirt_889227-23181.jpg?w=1800" class="product-thumb" alt="white black striped long sleeves">
+                <button class="basket-button">Add to basket</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">White t-shirt with stripes</h2>
+                <p class="product-desc">Short text about the product</p>
+                <span class="discount-price">10</span><span class="price">$20</span>
+            </div>
+        </div>
+        <div class="border"></div>
+    </div>
+</main>
+<footer>
+    <div class="footer-content">
+        <div class="content">
+            <h2>About us</h2>
+            <div>Company T-shirt creators</div>
+            <div>Student project ČZU</div>
+        </div>
+        <div class="content">
+            <h2>Help</h2>
+            <div>Contact us via email: <a href="mailto:webmaster@example.com">madiandhonzashop@mail.com</a></div>
+        </div>
+        <div class="content">
+            <h2>Delivery</h2>
+            <div>Free delivery over 100$</div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
