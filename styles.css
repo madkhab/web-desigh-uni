@@ -51,10 +51,23 @@ a {
     align-items: center;
 }
 
-.close-menu-image, .open-menu-image {
-    height: 100px;
-    width: 100px;
+.basket {
+    display: inline-block;
+    background: white;
+    border-radius: 50%;
+    transition: ease-in 1s;
 }
+
+.close-menu-image, .open-menu-image, .basket-image {
+    height: 55px;
+    width: 55px;
+}
+
+.basket-image {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
 
 .search {
     display: inline-flex;
