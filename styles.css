@@ -329,7 +329,9 @@ a {
 
 .products-catalog {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns:
+    repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
     padding: 20px;
     column-gap: 20px;
     row-gap: 10px;
