@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@100;400;800&display=swap"
@@ -13,7 +13,7 @@
 <header>
     <div class="navigation-wrapper">
         <nav class="navigation-bar">
-            <a href="#home" class="logo">Madi & Honza's Shop</a>
+            <a href="../index.html" class="logo">Madi & Honza's Shop</a>
             <div class="search">
                 <input id="search-field" type="text" class="search-box"
                        placeholder="Search type of t-shirt, brand, name">
@@ -21,17 +21,17 @@
                     <label for="search-field" class="search-button-label">Search</label>
                 </button>
             </div>
-            <a href="./catalog/basket.html">
-            <div class="basket">
-                <img class="basket-image" src="./assets/basket.png" alt="basket">
-            </div>
+            <a href="../catalog/basket.html">
+                <div class="basket">
+                    <img class="basket-image" src="../assets/basket.png" alt="basket">
+                </div>
             </a>
             <div class="navigation-menu-burger">
-                <img class="open-menu-image" src="./assets/menu-bar.png" alt="menu">
-                <img class="close-menu-image" src="./assets/reject.png" alt="menu">
+                <img class="open-menu-image" src="../assets/menu-bar.png" alt="menu">
+                <img class="close-menu-image" src="../assets/reject.png" alt="menu">
                 <div class="navigation-content">
                     <div class="navigation-items">
-                        <a class="navigation-item" href="./catalog/men-catalog.html">MEN T-SHIRTS</a>
+                        <a class="navigation-item" href="men-catalog.html">MEN T-SHIRTS</a>
                         <a class="navigation-item" href="#">WOMEN T-SHIRTS</a>
                     </div>
                 </div>
@@ -39,21 +39,8 @@
         </nav>
     </div>
 </header>
-<main>
-    <div id="home">
-        <div class="menu-container">
-            <div class="category-select" id="mens-clothes">
-                <div class="category-label-wrapper">
-                    <a href="./catalog/men-catalog.html">Men clothes</a>
-                </div>
-            </div>
-            <div class="category-select" id="womens-clothes">
-                <div class="category-label-wrapper">
-                    <a href="#">Women clothes</a>
-                </div>
-            </div>
-        </div>
-    </div>
+<main class="basket-list">
+    <h1 class="basket-title">Your items</h1>
 </main>
 <footer>
     <div class="footer-content">

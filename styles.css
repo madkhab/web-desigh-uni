@@ -308,6 +308,14 @@ a {
     cursor: pointer;
 }
 
+.basket-title {
+    margin: 20px;
+    padding: 0 5vw;
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+}
+
 .product-image > .basket-button {
     position: absolute;
     bottom: 10px;
