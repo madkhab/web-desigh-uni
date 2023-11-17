@@ -23,6 +23,7 @@ footer {
     width: 100%;
 }
 
+
 a {
     text-decoration: none;
     color: inherit;
@@ -50,6 +51,7 @@ a {
     justify-content: space-between;
     align-items: center;
 }
+
 
 .basket {
     display: inline-block;
@@ -100,6 +102,7 @@ a {
     transition: .3s ease-out;
 }
 
+
 .search-button {
     width: 30%;
     height: inherit;
@@ -111,6 +114,7 @@ a {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
 
 .navigation-menu-burger {
     display: inline-block;
@@ -127,6 +131,7 @@ a {
 .navigation-menu-burger:hover {
     background: rgba(246, 245, 242, 0.71);
 }
+
 
 @keyframes slide {
     100% {
@@ -236,6 +241,7 @@ a {
     text-align: center;
 }
 
+
 .men-product {
     position: relative;
     /*overflow: hidden;*/
@@ -308,13 +314,96 @@ a {
     cursor: pointer;
 }
 
+.basket-list {
+
+}
+
 .basket-title {
-    margin: 20px;
+    margin-top: 20px;
     padding: 0 5vw;
-    font-size: 45px;
-    font-weight: 500;
+    font-size: 60px;
+    font-weight: 250;
     text-align: center;
 }
+
+.basket-page {
+    margin: 70px auto;
+}
+
+.basket-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.basket-table-head {
+    font-size: 35px;
+    padding-left: 15px;
+    padding-right: 20px;
+    color: #ffffff;
+    background: #000000;
+    font-weight: normal;
+}
+
+td{
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 5px;
+}
+
+.basket-input{
+    font-size: 25px;
+    text-align: center;
+    width: 50px;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid #000000;
+}
+
+.basket-remove-btn{
+    color: #ffffff;
+    background: #000000;
+    margin: 5px;
+    font-size: 35px;
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.basket-info {
+    font-size: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.basket-product-name {
+    text-transform: capitalize;
+    padding: 60px 40px;
+}
+
+.basket-product-price {
+    opacity: 0.5;
+}
+.basket-product-img {
+    position: relative;
+    margin: 25px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.basket-total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.basket-total-price table {
+    border-top: 3px solid #000000;
+    width: 100%;
+    max-width: 400px;
+}
+
+
 
 .product-image > .basket-button {
     position: absolute;
