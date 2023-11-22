@@ -232,6 +232,11 @@ a {
     word-break: break-word;
 }
 
+.content div {
+    font-weight: normal;
+    font-family: 'Kanit', sans-serif;
+}
+
 .content:nth-child(-n + 2) {
     margin-right: 5px;
     border-right: 2px solid #ffffff;
@@ -330,7 +335,7 @@ a {
     margin: 70px auto;
 }
 
-.basket-table{
+.basket-table {
     width: 100%;
     border-collapse: collapse;
 }
@@ -344,13 +349,13 @@ a {
     font-weight: normal;
 }
 
-td{
+td {
     text-align: center;
     font-size: 30px;
     padding: 10px 5px;
 }
 
-.basket-input{
+.basket-input {
     font-size: 25px;
     text-align: center;
     width: 50px;
@@ -359,7 +364,7 @@ td{
     border: 2px solid #000000;
 }
 
-.basket-remove-btn{
+.basket-remove-btn {
     color: #ffffff;
     background: #000000;
     margin: 5px;
@@ -376,6 +381,7 @@ td{
     display: flex;
     flex-wrap: wrap;
 }
+
 .basket-product-name {
     text-transform: capitalize;
     padding: 60px 40px;
@@ -384,6 +390,7 @@ td{
 .basket-product-price {
     opacity: 0.5;
 }
+
 .basket-product-img {
     position: relative;
     margin: 25px;
@@ -402,7 +409,6 @@ td{
     width: 100%;
     max-width: 400px;
 }
-
 
 
 .product-image > .basket-button {
@@ -454,11 +460,12 @@ td{
 .product-detail-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /*align-items: center;*/
 }
 
 .product-detail-wrapper > .product-image {
     margin-bottom: 30px;
+    align-self: center;
 }
 
 .product-detail-wrapper h2 {
@@ -467,9 +474,47 @@ td{
 
 .product-wrapper {
     display: flex;
-    flex-direction: row-reverse;
+    /*flex-direction: row-reverse;*/
+    /*align-items: center;*/
+}
+
+.product-wrapper .basket-button {
+    transform: none;
+    margin-top: 10px;
+    flex-grow: 1;
+}
+.product-wrapper {
+    flex-grow: 4;
 }
 
 .details {
+    margin: 30px 15px;
+    font-size: 30px;
+}
+.details h2 {
+    font-size: 40px;
+}
+.info-title {
+    font-size: 25px;
+}
+.composition {
+    margin-bottom: 10px;
+}
 
+.span-text {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.instruction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 35px;
+}
+
+.instruction img {
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
 }
