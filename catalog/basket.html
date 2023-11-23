@@ -41,6 +41,11 @@
 <body>
 <main class="basket-list">
     <h1 class="basket-title">Your items</h1>
+    <div class="breadcrumbs">
+        <a href="../index.html">Home</a> &gt;
+        <a href="men-catalog.html">Men T-shirts</a> &gt;
+        <span>Basket</span>
+    </div>
     <div class="basket-container basket-page">
         <table class="basket-table">
             <thead class="basket-table-head">
@@ -57,7 +62,44 @@
                     <div class="basket-info">
                         <img src="https://img.freepik.com/premium-photo/red-t-shirt-mockup-modern-fashionable-looks_910684-3213.jpg" class="basket-product-img" alt="red shirt no sleeves">
                         <div>
-                            <p class="basket-product-name">Red T-shirt</p>
+                            <p class="basket-product-name">Red Regular T-shirt</p>
+                            <small class="basket-product-price">Price: $6.00</small>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <a class="basket-remove-btn" href="#">Remove</a></td>
+                <td>
+                    <label>#
+                    <input class="basket-input" type="number" value="1">
+                    </label>
+                </td>
+                <td class="basket-subtotal-price">$6.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="basket-info">
+                        <img src="https://img.freepik.com/premium-photo/men-s-yellow-tshirts-mockup-design-templatemockup_236836-23780.jpg?w=740" class="basket-product-img" alt="yellow shirt no sleeves">
+                        <div>
+                            <p class="basket-product-name">Yellow Regular T-Shirt</p>
+                            <small class="basket-product-price">Price: $5.50</small>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <a class="basket-remove-btn" href="#">Remove</a></td>
+                <td>
+                    <label>#
+                    <input class="basket-input" type="number" value="1">
+                    </label>
+                </td>
+                <td class="basket-subtotal-price">$5.50</td>
+            </tr><tr>
+                <td>
+                    <div class="basket-info">
+                        <img src="https://img.freepik.com/premium-photo/man-striped-shirt_889227-23181.jpg?w=1800" class="basket-product-img" alt="white black striped long sleeves">
+                        <div>
+                            <p class="basket-product-name">White Longsleeve T-Shirt with stripes</p>
                             <small class="basket-product-price">Price: $10.00</small>
                         </div>
                     </div>
@@ -71,61 +113,55 @@
                 </td>
                 <td class="basket-subtotal-price">$10.00</td>
             </tr>
-            <tr>
-                <td>
-                    <div class="basket-info">
-                        <img src="https://img.freepik.com/premium-photo/red-t-shirt-mockup-modern-fashionable-looks_910684-3213.jpg" class="basket-product-img" alt="red shirt no sleeves">
-                        <div>
-                            <p class="basket-product-name">Red T-shirt</p>
-                            <small class="basket-product-price">Price: $11.00</small>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <a class="basket-remove-btn" href="#">Remove</a></td>
-                <td>
-                    <label>#
-                    <input class="basket-input" type="number" value="1">
-                    </label>
-                </td>
-                <td class="basket-subtotal-price">$11.00</td>
-            </tr><tr>
-                <td>
-                    <div class="basket-info">
-                        <img src="https://img.freepik.com/premium-photo/red-t-shirt-mockup-modern-fashionable-looks_910684-3213.jpg" class="basket-product-img" alt="red shirt no sleeves">
-                        <div>
-                            <p class="basket-product-name">Red T-shirt</p>
-                            <small class="basket-product-price">Price: $12.00</small>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <a class="basket-remove-btn" href="#">Remove</a></td>
-                <td>
-                    <label>#
-                    <input class="basket-input" type="number" value="1">
-                    </label>
-                </td>
-                <td class="basket-subtotal-price">$12.00</td>
-            </tr>
             </tbody>
         </table>
         <div class="basket-total-price">
             <table>
                 <tr>
                     <td>Subtotal</td>
-                    <td>$33</td>
-                </tr>
-                <tr>
-                    <td>Tax</td>
-                    <td>$2.55</td>
-                </tr>
-                <tr>
-                    <td>Total</td>
-                    <td>$35.55</td>
+                    <td>$21.00</td>
                 </tr>
             </table>
         </div>
+    </div>
+    <div class="details-container">
+            <div class="payment-details">
+                <h1>Payment Information</h1>
+                <div class="details-card">
+                    <div class="name-address">
+                        <div class="first-lastName">
+                            <input type="text" placeholder="First Name" />
+                            <input type="text" placeholder="Last Name" />
+                        </div>
+                        <div class="address">
+                            <input type="text" onkeyup="change()" id="put" placeholder="Address" />
+                            <input type="number" placeholder="Postalcode" />
+                            <input type="text" placeholder="Country" />
+                        </div>
+                    </div>
+                    <h1>Transport Details</h1>
+                    <div class="transport-card">
+                        <div class="on-address-card">
+                            <h4>Transport on the address</h4>
+                            <p>Transports ######</p>
+                            <p>$5.00</p>
+                        </div>
+                        <div class="pickup-card">
+                            <h4>Personal pickup at our store</h4>
+                            <p>Kamýcká 129, 165 00 Praha-Suchdol</p>
+                            <p>$FREE</p>
+                        </div>
+                    </div>
+                    <div class="procced-total">
+                        <div class="procced-payment">
+                            <a href="">Procced to payment</a>
+                        </div>
+                        <div class="total-price">
+                            <h1>Total: $26.00</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
 </main>
 </body>
@@ -139,7 +175,9 @@
         <div class="content">
             <h2>Help</h2>
             <div>Contact us via email: <a href="mailto:webmaster@example.com">madiandhonzashop@mail.com</a></div>
-        </div>
+            <div>Or visit us at: </div>
+            <div><a href="https://www.google.com/maps/place/%C4%8Cesk%C3%A1+zem%C4%9Bd%C4%9Blsk%C3%A1+univerzita+v+Praze/@50.1348775,14.3569126,14z/data=!4m15!1m8!3m7!1s0x470beaa021ecc473:0x3c4d6ca2d65db0dc!2sPraha-Suchdol!3b1!8m2!3d50.1331113!4d14.3768816!16s%2Fg%2F1hh_r6550!3m5!1s0x470beaa5d02097fb:0xf29bd7cffb8fb4bc!8m2!3d50.129994!4d14.3735979!16zL20vMDk1MXM4?entry=ttu"> Kamýcká 129, 165 00 Praha-Suchdol</a></div>
+            </div>
         <div class="content">
             <h2>Delivery</h2>
             <div>Free delivery over 100$</div>
