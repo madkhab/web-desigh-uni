@@ -94,7 +94,8 @@
                     </label>
                 </td>
                 <td class="basket-subtotal-price">$5.50</td>
-            </tr><tr>
+            </tr>
+            <tr>
                 <td>
                     <div class="basket-info">
                         <img src="https://img.freepik.com/premium-photo/man-striped-shirt_889227-23181.jpg?w=1800" class="basket-product-img" alt="white black striped long sleeves">
@@ -135,15 +136,24 @@
                         </div>
                         <div class="address">
                             <input type="text" onkeyup="change()" id="put" placeholder="Address" />
+                            <input type="number" placeholder="Number" />
                             <input type="number" placeholder="Postalcode" />
-                            <input type="text" placeholder="Country" />
                         </div>
                     </div>
                     <h1>Transport Details</h1>
                     <div class="transport-card">
                         <div class="on-address-card">
                             <h4>Transport on the address</h4>
-                            <p>Transports ######</p>
+                            <div class="checkbox-container">
+                                <input type="radio" name="checkboxGroup" id="checkbox1" checked>
+                                <label for="checkbox1">DHL</label>
+
+                                <input type="radio" name="checkboxGroup" id="checkbox2">
+                                <label for="checkbox2">Zásilkovna</label>
+
+                                <input type="radio" name="checkboxGroup" id="checkbox3">
+                                <label for="checkbox3">Česká pošta</label>
+                            </div>
                             <p>$5.00</p>
                         </div>
                         <div class="pickup-card">
