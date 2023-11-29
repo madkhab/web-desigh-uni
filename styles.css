@@ -271,8 +271,6 @@ a {
 
 .men-product {
     position: relative;
-    /*overflow: hidden;*/
-    padding: 30px 0;
 }
 
 .product-category {
@@ -331,7 +329,7 @@ a {
 .basket-button {
     transform: translateX(-50%);
     padding: 10px;
-    width: 90%;
+    width: 100%;
     font-size: 30px;
     border: 2px solid #000000;
     outline: none;
@@ -341,7 +339,7 @@ a {
     cursor: pointer;
 }
 
-.basket-title {
+.header-title {
     margin-top: 20px;
     padding: 0 5vw;
     font-size: 90px;
@@ -480,6 +478,7 @@ td {
 .product-detail-wrapper {
     display: flex;
     flex-direction: column;
+    margin: 30px 60px;
     /*align-items: center;*/
 }
 
@@ -489,13 +488,45 @@ td {
 }
 
 .product-detail-wrapper h2 {
-    font-size: 30px;
+    font-size: 60px;
+    text-align: center;
 }
 
 .product-wrapper {
+    text-align: start;
+}
+
+.product-wrapper .discount-price {
+    font-size: 50px;
+}
+
+.size-container {
     display: flex;
-    /*flex-direction: row-reverse;*/
-    /*align-items: center;*/
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: start;
+    margin: 10px 0;
+    font-size: 40px;
+}
+
+.size-box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.size-box-wrapper li {
+    align-items: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding: 10px;
+    min-height: 70px;
+    min-width: 70px;
+    margin: 10px;
 }
 
 .product-wrapper .basket-button {
@@ -503,6 +534,7 @@ td {
     margin-top: 10px;
     flex-grow: 1;
 }
+
 .product-wrapper {
     flex-grow: 4;
 }
@@ -511,19 +543,23 @@ td {
     margin: 30px 15px;
     font-size: 30px;
 }
+
 .details h2 {
     font-size: 40px;
 }
+
 .info-title {
     font-size: 25px;
 }
+
 .composition {
     margin-bottom: 10px;
 }
 
 .span-text {
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 30px;
+    color: #5a5a5a;
 }
 
 .instruction {
@@ -549,13 +585,16 @@ td {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
 .details-container h1 {
     font-size: 65px;
 }
-.details-container h4, .details-container a{
+
+.details-container h4, .details-container a {
     font-size: 35px;
 }
-.details-container p{
+
+.details-container p {
     font-size: 35px;
     opacity: 50%;
 }
@@ -635,4 +674,86 @@ input[type="checkbox"] {
     margin: 5px;
     font-size: 35px;
     cursor: pointer;
+}
+
+.column-header {
+    font-size: 40px;
+}
+
+.product-shipping-details {
+    display: table;
+    border-collapse: collapse;
+    height: 100%;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.table-body-wrapper tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.column-header th {
+    padding: 20px;
+}
+
+.table-body-wrapper tr td {
+    padding: 30px;
+    color: #5a5a5a;
+}
+
+.product-detail-image {
+    display: grid;
+    grid-template-columns: 650px 200px;
+    grid-template-rows: min-content;
+    grid-gap: 15px;
+    grid-auto-flow: column;
+    margin-bottom: 30px;
+}
+
+.product-detail-image img {
+    border: 2px solid #5a5a5a;
+    transition: 1s;
+}
+
+.product-detail-image img:hover {
+    opacity: 0.5;
+}
+
+.product-detail-image img:first-child {
+    grid-column: 1;
+    grid-row: 1 / 5;
+    height: 100%;
+}
+.similar-products-wrapper {
+    margin: 30px 0;
+}
+.similar-products {
+    display: block;
+    width: 100%;
+    overflow: scroll;
+}
+
+.products-container {
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.similar-product-card {
+    border: 2px solid #5a5a5a;
+    margin: 10px;
+}
+
+.similar-product-card h2 {
+    font-size: 35px;
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    height: 100px;
+}
+.review-stars {
+    height: 200px;
+    margin-right: 20px;
 }
