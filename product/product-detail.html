@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@100;400;800&display=swap"
           rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Men T-shirts catalog</title>
 </head>
 <body>
@@ -14,14 +15,13 @@
     <div class="navigation-wrapper">
         <nav class="navigation-bar">
             <a href="../index.html" class="logo">Madi & Honza's Shop</a>
-            <div class="search">
-                <input id="search-field" type="text" class="search-box"
-                       placeholder="Search type of t-shirt, brand, name">
-                <button class="search-button" type="submit">
-                    <label for="search-field" class="search-button-label"><a
-                            href="../catalog/search/search-result..html">Search</a></label>
-                </button>
-            </div>
+            <a href="../catalog/search/search-result..html">
+                <div class="search-container">
+                    <input id="search-field" type="text" class="search-box" placeholder="Search type of t-shirt, brand, name">
+                    <img class="search-button" src="../assets/search-icon.png" alt="search-btn">
+                    <label for="search-field" class="search-button-label"></label>
+                </div>
+            </a>
             <a href="../basket/basket.html">
                 <div class="basket">
                     <img class="basket-image" src="../assets/basket.png" alt="basket">
@@ -65,7 +65,7 @@
             <h2>Red regular T-shirt</h2>
             <div class="reviews">
                 <img src="../assets/rating-5-out-5.png" alt="5 out of 5 stars review" class="review-stars">
-                <span><u>10 reviews</u></span>
+                <span><a href="../product/reviews.html">10 reviews</a></span>
             </div>
             <div class="initial-price">Initial price <span class="price">12$</span></div>
             <div class="discount-price">Discount price: <span>6$</span></div>

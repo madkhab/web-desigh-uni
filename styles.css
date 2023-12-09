@@ -7,6 +7,7 @@
 
 body {
     min-height: 100vh;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -17,7 +18,7 @@ main {
 }
 
 .breadcrumbs {
-    font-size: 30px;
+    font-size: 15px;
     background: #000000;
     color: #ffffff;
     border-top: 2px solid #ffffff;
@@ -40,7 +41,7 @@ main {
 footer {
     height: 100%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 5px;
     background: #000000;
     width: 100%;
 }
@@ -49,25 +50,33 @@ footer {
     display: none;
 }
 
-
 a {
     text-decoration: none;
     color: inherit;
+    font-size: 20px;
 }
 
+@media screen and (max-width: 600px) {
+    a {
+        font-size: 25px;
+    }
+}
 .logo {
-    font-size: 50px;
+    font-size: 7vw;
     align-self: center;
-    margin-left: 10px;
     color: #ffffff;
 }
 
 .navigation-wrapper {
     position: relative;
-    height: 10vh;
+    height: 12vh;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     background: #000000;
-    padding: 30px;
+    padding: 2vh 1.5vw;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 .navigation-bar {
@@ -78,7 +87,6 @@ a {
     align-items: center;
 }
 
-
 .basket {
     display: inline-block;
     background: white;
@@ -87,15 +95,9 @@ a {
 }
 
 .close-menu-image, .open-menu-image, .basket-image {
-    height: 55px;
-    width: 55px;
+    height: 4vh;
+    width: 4vh;
 }
-
-.basket-image {
-    margin-top: 5px;
-    margin-right: 5px;
-}
-
 
 .search {
     display: inline-flex;
@@ -103,44 +105,47 @@ a {
     height: 90%;
 }
 
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
 .search-box {
     width: 90%;
-    height: 90%;
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    height: inherit;
+    padding: 1.8vh 2vw;
+    border-top-left-radius: 1vh;
+    border-bottom-left-radius: 1vh;
     border: 1px solid #ffffff;
     background: none;
     color: #ffffff;
     outline: none;
-    font-size: 20px;
+    font-size: 2vh;
     font-family: 'Kanit', sans-serif;
+    flex: 1;
 }
 
 .search-box:hover::placeholder {
     opacity: 0.3;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .search-box::placeholder {
     color: #ffffff;
     opacity: 0.5;
-    transition: .3s ease-out;
+    transition: 0.3s ease-out;
 }
-
 
 .search-button {
-    width: 30%;
+    width: 5vh;
     height: inherit;
-    padding: 10px 20px;
     background: #ffffff;
+    padding: 11px 5px;
     color: #000000;
-    font-size: 20px;
     font-family: 'Kanit', sans-serif;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh;
 }
-
 
 .navigation-menu-burger {
     display: inline-block;
@@ -158,7 +163,6 @@ a {
     background: rgba(246, 245, 242, 0.71);
 }
 
-
 @keyframes slide {
     100% {
         clip: rect(0, 100vw, auto, 0);
@@ -173,11 +177,11 @@ a {
     bottom: 0;
     right: 0;
     height: 100%;
-    padding: 20px;
+    padding: 2vh 1vw;
     background: rgba(5, 5, 5, 0.65);
     z-index: 99;
     clip: rect(0, 100vw, auto, 100vw);
-    animation: slide .5s linear .5s forwards;
+    animation: slide 0.5s linear 0.5s forwards;
 }
 
 .navigation-menu-burger:hover .close-menu-image {
@@ -187,25 +191,25 @@ a {
 .navigation-items {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 0.5vh 1vw;
 }
 
 .navigation-item {
-    font-size: 70px;
     color: #ffffff;
     cursor: pointer;
-    padding: 10px;
+    padding: 0.5vh 1vw;
+    font-size: 5vh;
 }
 
 .navigation-item:nth-child(-n + 1) {
-    border-bottom: 10px solid #ffffff;
+    border-bottom: 1vh solid #ffffff;
 }
 
 .menu-container {
     display: flex;
     width: 100%;
     color: #ffffff;
-    font-size: 65px;
+    font-size: 3vw;
     cursor: pointer;
     z-index: 1;
 }
@@ -224,7 +228,7 @@ a {
 
 .category-select:hover {
     filter: grayscale(90%);
-    font-size: 70px;
+    font-size: 40px;
 }
 
 .category-select:hover .category-label-wrapper {
@@ -254,9 +258,9 @@ a {
 
 .content {
     color: #ffffff;
-    font-size: 25px;
+    font-size: 15px;
     width: calc(100% / 3);
-    margin: 10px;
+    margin: 5px;
     word-break: break-word;
 }
 
@@ -321,6 +325,7 @@ a {
 .product-thumb {
     width: 100%;
     object-fit: cover;
+    border: solid #000000 1px;
 }
 
 .product-image img {
@@ -339,6 +344,7 @@ a {
     font-size: 25px;
 }
 
+
 .basket-button {
     transform: translateX(-50%);
     padding: 10px;
@@ -355,7 +361,7 @@ a {
 .header-title {
     margin-top: 20px;
     padding: 0 5vw;
-    font-size: 90px;
+    font-size: 45px;
     font-weight: 250;
     text-align: center;
 }
@@ -370,7 +376,7 @@ a {
 }
 
 .basket-table-head {
-    font-size: 35px;
+    font-size: 20px;
     height: 45px;
     width: 100%;
     color: #ffffff;
@@ -385,11 +391,12 @@ td {
 }
 
 .basket-input {
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
-    width: 50px;
+    width: 60px;
     height: 40px;
     padding: 10px;
+    margin-bottom: 20px;
     border: 2px solid #000000;
 }
 
@@ -397,24 +404,29 @@ td {
     color: #ffffff;
     background: #000000;
     margin: 5px;
-    font-size: 35px;
+    font-size: 20px;
     display: inline-block;
-    padding: 10px 25px;
+    padding: 5px 10px;
     text-decoration: none;
     border-radius: 20px;
     transition: background-color 0.3s ease;
+    width: 100%;
 }
 
 .basket-info {
-    font-size: 40px;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 35px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .basket-product-name {
     text-transform: capitalize;
-    padding: 10px 40px;
-    width: 250px;
+    margin: 5px;
+    width: 100%;
 }
 
 .basket-product-price {
@@ -423,9 +435,10 @@ td {
 
 .basket-product-img {
     position: relative;
-    margin: 25px;
-    width: 250px;
-    height: 250px;
+    margin: 10px;
+    width: 100%; /* Přizpůsobeno pro plnou šířku */
+    max-width: 250px; /* Omezení na 250px */
+    height: auto; /* Automatická výška pro zachování poměru stran */
     overflow: hidden;
     border: 2px solid #000000;
 }
@@ -438,7 +451,24 @@ td {
 .basket-total-price table {
     border-top: 3px solid #000000;
     width: 100%;
-    max-width: 400px;
+}
+
+.product-image > .basket-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 90%;
+}
+
+@media screen and (max-width: 600px) {
+    .basket-table td,
+    .basket-info {
+        font-size: 20px;
+    }
+
+    .product-image > .basket-button {
+        width: 100%;
+    }
 }
 
 
@@ -448,6 +478,14 @@ td {
     left: 50%;
     width: 90%;
 }
+
+@media screen and (max-width: 600px) {
+    .product-image > .basket-button {
+        width: 100%;
+    }
+}
+
+
 
 .product-info {
     font-size: 30px;
@@ -501,7 +539,7 @@ td {
 }
 
 .product-detail-wrapper h2 {
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -510,7 +548,7 @@ td {
 }
 
 .product-wrapper .discount-price {
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .size-container {
@@ -519,7 +557,7 @@ td {
     align-items: baseline;
     justify-content: start;
     margin: 10px 0;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .size-box-wrapper {
@@ -535,7 +573,7 @@ td {
     cursor: pointer;
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 30px;
     padding: 10px;
     min-height: 70px;
     min-width: 70px;
@@ -544,7 +582,7 @@ td {
 
 .product-wrapper .basket-button {
     transform: none;
-    margin-top: 10px;
+    margin-top: 5px;
     flex-grow: 1;
 }
 
@@ -553,12 +591,12 @@ td {
 }
 
 .details {
-    margin: 30px 15px;
+    margin: 20px 5px;
     font-size: 30px;
 }
 
 .details h2 {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .info-title {
@@ -566,12 +604,12 @@ td {
 }
 
 .composition {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .span-text {
-    margin-left: 10px;
-    font-size: 30px;
+    margin-left: 5px;
+    font-size: 15px;
     color: #5a5a5a;
 }
 
@@ -579,7 +617,7 @@ td {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 35px;
+    font-size: 20px;
 }
 
 .instruction img {
@@ -593,48 +631,48 @@ td {
     display: flex;
     justify-content: space-evenly;
     background-color: #000000;
-    padding: 15px;
+    padding: 10px;
+    height: 100%;
 }
 
 .details-container h1 {
-    font-size: 65px;
+    font-size: 20px;
 }
 
 .details-container h4, .details-container a {
-    font-size: 35px;
+    font-size: 20px;
 }
 
 .details-container p {
-    font-size: 35px;
+    font-size: 15px;
     opacity: 50%;
 }
 
 .details-container input {
     outline: 0;
-    background: #f2f2f2;
+    background: rgba(0, 0, 0, 0.14);
     border-radius: 4px;
     width: 100%;
+    margin: 2px;
+    padding: 2px;
     border: 0;
-    caret-color: #4f5d7e;
-    margin: 10px 15px;
-    padding: 15px 20px;
+    caret-color: #ec5707;
     box-sizing: border-box;
-    font-size: 35px;
+    font-size: 15px;
 }
 
 .details-card {
     color: #000000;
-    width: auto;
-    height: 45vh;
+    width: 100%;
     border-radius: 8px;
-    padding: 20px;
+    padding: 8px;
     background-color: #ffffff;
 }
 
 .first_lastName, .address, .transport-card, .procced-total {
     display: flex;
     justify-content: space-between;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .on-address-card {
@@ -682,7 +720,7 @@ input[type="checkbox"] {
 
 .checkbox-container label {
     margin: 5px;
-    font-size: 35px;
+    font-size: 15px;
     cursor: pointer;
 }
 
@@ -703,11 +741,11 @@ input[type="checkbox"] {
 }
 
 .column-header th {
-    padding: 20px;
+    padding: 5px;
 }
 
 .table-body-wrapper tr td {
-    padding: 30px;
+    padding: 15px;
     color: #5a5a5a;
 }
 
@@ -803,4 +841,20 @@ input[type="checkbox"] {
 .selected-sort {
     text-decoration: underline;
     font-size: 33px;
+}
+.review {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin: 20px;
+}
+
+.customer-info {
+    font-style: italic;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.rating {
+    color: #f39c12;
+    font-weight: bold;
 }

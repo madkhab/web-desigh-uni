@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@100;400;800&display=swap"
           rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web design project</title>
 </head>
 <header>
@@ -14,11 +15,13 @@
         <nav class="navigation-bar">
             <a href="../index.html" class="logo">Madi & Honza's Shop</a>
             <div class="search">
-                <input id="search-field" type="text" class="search-box"
-                       placeholder="Search type of t-shirt, brand, name">
-                <button class="search-button" type="submit">
-                    <label for="search-field" class="search-button-label"><a href="../catalog/search/search-result..html">Search</a></label>
-                </button>
+                <a href="../catalog/search/search-result..html">
+                    <div class="search-container">
+                        <input id="search-field" type="text" class="search-box" placeholder="Search type of t-shirt, brand, name">
+                        <img class="search-button" src="../assets/search-icon.png" alt="search-btn">
+                        <label for="search-field" class="search-button-label"></label>
+                    </div>
+                </a>
             </div>
             <a href="#">
                 <div class="basket">
@@ -61,12 +64,11 @@
                 <td>
                     <div class="basket-info">
                         <a href="../product/product-detail.html">
-                            <img
-                                src="https://img.freepik.com/premium-photo/red-t-shirt-mockup-modern-fashionable-looks_910684-3213.jpg"
+                            <img src="https://img.freepik.com/premium-photo/red-t-shirt-mockup-modern-fashionable-looks_910684-3213.jpg"
                                 class="basket-product-img" alt="red shirt no sleeves">
                         </a>
                         <div>
-                            <a href="../product/product-detail.html"><p class="basket-product-name">Red Regular T-shirt</p></a>
+                            <p class="basket-product-name">Red Regular T-shirt</p>
                             <small class="basket-product-price">Price: $6.00</small>
                         </div>
                     </div>
@@ -74,7 +76,7 @@
                 <td>
                     <a class="basket-remove-btn" href="#">Remove</a></td>
                 <td>
-                    <label>#
+                    <label>
                     <input class="basket-input" type="number" step="2" value="1">
                     </label>
                 </td>
@@ -83,8 +85,10 @@
             <tr>
                 <td>
                     <div class="basket-info">
+                        <a href="../product/product-detail.html">
                         <img src="https://img.freepik.com/premium-photo/men-s-yellow-tshirts-mockup-design-templatemockup_236836-23780.jpg?w=740"
                              class="basket-product-img" alt="yellow shirt no sleeves">
+                        </a>
                         <div>
                             <p class="basket-product-name">Yellow Regular T-Shirt</p>
                             <small class="basket-product-price">Price: $5.50</small>
@@ -94,7 +98,7 @@
                 <td>
                     <a class="basket-remove-btn" href="#">Remove</a></td>
                 <td>
-                    <label>#
+                    <label>
                         <input class="basket-input" type="number" value="1">
                     </label>
                 </td>
@@ -103,8 +107,10 @@
             <tr>
                 <td>
                     <div class="basket-info">
+                        <a href="../product/product-detail.html">
                         <img src="https://img.freepik.com/premium-photo/man-striped-shirt_889227-23181.jpg?w=1800"
                              class="basket-product-img" alt="white black striped long sleeves">
+                        </a>
                         <div>
                             <p class="basket-product-name">White Longsleeve T-Shirt with stripes</p>
                             <small class="basket-product-price">Price: $10.00</small>
@@ -114,7 +120,7 @@
                 <td>
                     <a class="basket-remove-btn" href="#">Remove</a></td>
                 <td>
-                    <label>#
+                    <label>
                         <input class="basket-input" type="number" value="1">
                     </label>
                 </td>
@@ -132,8 +138,8 @@
         </div>
     </div>
     <div class="details-container">
-        <div class="payment-details">
-            <h1>Payment Information</h1>
+        <div class="shipping-details">
+            <h1>Shipping Information</h1>
             <div class="details-card">
                 <div class="name-address">
                     <div class="first-lastName">
@@ -142,7 +148,7 @@
                     </div>
                     <div class="address">
                         <input type="text" onkeyup="change()" id="put" placeholder="Address"/>
-                        <input type="number" placeholder="Number"/>
+                        <input type="number" placeholder="Street Number"/>
                         <input type="number" placeholder="Postalcode"/>
                     </div>
                 </div>
