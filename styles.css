@@ -450,9 +450,8 @@ td {
 .basket-product-img {
     position: relative;
     margin: 10px;
-    width: 100%; /* Přizpůsobeno pro plnou šířku */
-    max-width: 250px; /* Omezení na 250px */
-    height: auto; /* Automatická výška pro zachování poměru stran */
+    width: 100%;
+    max-width: 250px;
     overflow: hidden;
     border: 2px solid #000000;
 }
