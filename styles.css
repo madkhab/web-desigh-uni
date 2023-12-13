@@ -970,6 +970,10 @@ input[type="checkbox"] {
         width: 200px;
     }
 
+    .discount-tag {
+        font-size: var(--font-size-biggest-small);
+    }
+
     .product-container:nth-child(5n + 1) .product-image {
         height: 300px;
     }
@@ -1054,6 +1058,7 @@ input[type="checkbox"] {
     .navigation-menu-burger {
         display: none;
     }
+
 
     .navigation-items-no-burger {
         display: block;
