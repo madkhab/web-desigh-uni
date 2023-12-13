@@ -907,7 +907,7 @@ input[type="checkbox"] {
 
 .review p {
     margin: 0 0 15px;
-    font-size: var(--font-size-smallest);
+    font-size: var(--font-size-small);
 }
 
 .customer-info {
@@ -972,6 +972,44 @@ input[type="checkbox"] {
 
     .product-container:nth-child(5n + 1) .product-image {
         height: 300px;
+    }
+    .home {
+        display: none
+    }
+    .logo {
+        display: block;
+    }
+    .product-desc {
+        font-size: var(--font-size-semi-medium);
+    }
+    .product-brand a {
+        font-size: var(--font-size-semi-large);
+    }
+    .basket-button a {
+        font-size: var(--font-size-biggest-small);
+    }
+    .details-container h1 {
+        font-size: var(--font-size-medium);
+    }
+    .details-container input, .details-container h4, a, h2 {
+        font-size: var(--font-size-semi-medium);
+    }
+    .content div, .content a {
+        font-size: var(--font-size-small);
+    }
+    .home-image, .basket-image, .close-menu-image, .open-menu-image {
+        height: 50px;
+        width: 50px;
+    }
+    .search-box, .search-button {
+        height: 50px;
+        width: 90%;
+        font-size: var(--font-size-small);
+    }
+    .navigation-item {
+        display: inline-grid;
+        padding: 1px;
+        font-size: var(--font-size-medium);
     }
 }
 
@@ -1047,62 +1085,6 @@ input[type="checkbox"] {
     }
 }
 
-/* Extra small devices (phones, 600px and down) */
-/*@media only screen and (max-width: 600px) {...}*/
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/*@media only screen and (min-width: 600px) {...}*/
-
-/* Medium devices (landscape tablets, 768px and up) */
-/*here nav items */
-/*@media only screen and (min-width: 768px) {...}*/
-
-/* Large devices (laptops/desktops, 992px and up) */
-/*@media only screen and (min-width: 992px) {...}*/
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/*@media only screen and (min-width: 1200px) {...}*/
-
-@media screen and (min-width: 600px) {
-    .home {
-        display: none
-    }
-    .logo {
-        display: block;
-    }
-    .product-desc {
-        font-size: var(--font-size-semi-medium);
-    }
-    .product-brand a {
-        font-size: var(--font-size-semi-large);
-    }
-    .basket-button a {
-        font-size: var(--font-size-biggest-small);
-    }
-    .details-container h1 {
-        font-size: var(--font-size-medium);
-    }
-    .details-container input, .details-container h4, a, h2 {
-        font-size: var(--font-size-semi-medium);
-    }
-    .content div, .content a {
-        font-size: var(--font-size-small);
-    }
-    .home-image, .basket-image, .close-menu-image, .open-menu-image {
-        height: 50px;
-        width: 50px;
-    }
-    .search-box, .search-button {
-        height: 50px;
-        width: 90%;
-        font-size: var(--font-size-small);
-    }
-    .navigation-item {
-        display: inline-grid;
-        padding: 1px;
-        font-size: var(--font-size-medium);
-    }
-}
 @media only screen and (min-width: 769px) {
 .product-category {
     font-size: var(--font-size-large);
@@ -1209,6 +1191,11 @@ input[type="checkbox"] {
     height: 200px;
 }
 
+.review p {
+    font-size: var(--font-size-medium);
+}
+
+
 .reviews a {
     font-size: var(--font-size-biggest-small);
 }
@@ -1286,3 +1273,19 @@ input[type="checkbox"] {
     }
 
 }
+
+/* Extra small devices (phones, 600px and down) */
+/*@media only screen and (max-width: 600px) {...}*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/*@media only screen and (min-width: 600px) {...}*/
+
+/* Medium devices (landscape tablets, 768px and up) */
+/*here nav items */
+/*@media only screen and (min-width: 768px) {...}*/
+
+/* Large devices (laptops/desktops, 992px and up) */
+/*@media only screen and (min-width: 992px) {...}*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*@media only screen and (min-width: 1200px) {...}*/
