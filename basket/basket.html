@@ -76,9 +76,9 @@
                             <img src="https://img.freepik.com/premium-photo/red-t-shirt-mockup-modern-fashionable-looks_910684-3213.jpg"
                                  class="basket-product-img" alt="red shirt no sleeves">
                         </a>
-                        <div>
-                            <p class="basket-product-name">Red Regular T-shirt</p>
-                            <small class="basket-product-price">Price: $6.00</small>
+                        <div class="basket-product-info">
+                            <div class="basket-product-name">Red Regular T-shirt</div>
+                            <p class="basket-product-price">Price: $6.00</p>
                         </div>
                     </div>
                 </td>
@@ -97,9 +97,9 @@
                         <img src="https://img.freepik.com/premium-photo/beige-color-men-s-tshirts-design-template_236836-23552.jpg?w=360"
                              class="basket-product-img" alt="yellow shirt no sleeves">
                         </a>
-                        <div>
-                            <p class="basket-product-name">Light brown T-shirt</p>
-                            <small class="basket-product-price">Price: $5.50</small>
+                        <div class="basket-product-info">
+                            <div class="basket-product-name">Light brown T-shirt</div>
+                            <p class="basket-product-price">Price: $5.50</p>
                         </div>
                     </div>
                 </td>
@@ -118,9 +118,9 @@
                         <img src="https://img.freepik.com/premium-photo/man-striped-shirt_889227-23181.jpg?w=1800"
                              class="basket-product-img" alt="white black striped long sleeves">
                         </a>
-                        <div>
-                            <p class="basket-product-name">White Longsleeve T-Shirt with stripes</p>
-                            <small class="basket-product-price">Price: $10.00</small>
+                        <div class="basket-product-info">
+                            <div class="basket-product-name">White Long-sleeve T-Shirt with stripes</div>
+                            <p class="basket-product-price">Price: $10.00</p>
                         </div>
                     </div>
                 </td>
@@ -149,13 +149,23 @@
             <div class="details-card">
                 <div class="name-address">
                     <div class="first-lastName">
-                        <input type="text" placeholder="First Name"/>
-                        <input type="text" placeholder="Last Name"/>
+                        <label for="firstname">
+                            <input id="firstname" type="text" placeholder="First Name"/>
+                        </label>
+                        <label for="lastname">
+                            <input id="lastname" type="text" placeholder="Last Name"/>
+                        </label>
                     </div>
                     <div class="address">
-                        <input type="text" onkeyup="change()" id="put" placeholder="Address"/>
-                        <input type="number" placeholder="Street Number"/>
-                        <input type="number" placeholder="Postalcode"/>
+                        <label class="shipping-detail-address" for="address-details">
+                            <input id="address-details" type="text" onkeyup="change()" placeholder="Address"/>
+                        </label>
+                        <label class="shipping-detail-address" for="street">
+                            <input id="street" type="number" placeholder="Street Number"/>
+                        </label>
+                        <label class="shipping-detail-address" for="postal-code">
+                            <input id="postal-code" type="number" placeholder="Postal code"/>
+                        </label>
                     </div>
                 </div>
                 <h1>Transport Details</h1>
